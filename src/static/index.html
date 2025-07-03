@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mergington High School Activities</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Add styles for participants section */
+      .activity-card {
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        background: #f9fafb;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      }
+      .participants-section {
+        margin-top: 1rem;
+        background: #eef2ff;
+        border-radius: 6px;
+        padding: 0.75rem;
+      }
+      .participants-section h4 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1rem;
+        color: #3730a3;
+      }
+      .participants-list {
+        margin: 0;
+        padding-left: 1.25rem;
+        color: #1e293b;
+      }
+      .participants-list li {
+        margin-bottom: 0.25rem;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -17,6 +47,18 @@
         <h3>Available Activities</h3>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
+          <!--
+            Each activity card should include:
+            <div class="activity-card">
+              ...activity info...
+              <div class="participants-section">
+                <h4>Participants</h4>
+                <ul class="participants-list">
+                  <!-- List of participants will be rendered here -->
+                </ul>
+              </div>
+            </div>
+          -->
           <p>Loading activities...</p>
         </div>
       </section>
@@ -26,7 +68,12 @@
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="your-email@mergington.edu"
+            />
           </div>
           <div class="form-group">
             <label for="activity">Select Activity:</label>
